@@ -1,0 +1,23 @@
+{
+  "name": "vue-notion-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.36"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.3.9",
+    "eslint": "^8.54.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "html-webpack-plugin": "^5.5.3",
+    "vue-loader": "^17.3.1"
+  }
+}
