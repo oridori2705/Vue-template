@@ -19,6 +19,12 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        //만약 axios라는 패키지는 포함시키려면 /node_modules\/(?!axios | ~~~ | ~~~ )/ 라고 적는다.
+        use: "babel-loader",
+      },
+      {
         test: /\.vue$/,
         use: "vue-loader",
         exclude: /node_modules/,
