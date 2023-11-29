@@ -13,6 +13,7 @@ module.exports = {
   entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    publicPath: "./",
     clean: true,
   },
   module: {
@@ -38,4 +39,8 @@ module.exports = {
       patterns: [{ from: "static" }],
     }),
   ],
+
+  devServer: {
+    historyApiFallback: true, //배포할 때는 호스팅서버에 따로 설정해줘야 됨
+  },
 };
