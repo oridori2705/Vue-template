@@ -31,7 +31,12 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["vue-style-loader", "css-loader", "sass-loader"],
+        use: [
+          "vue-style-loader",
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
         exclude: /node_modules/,
       },
     ],
